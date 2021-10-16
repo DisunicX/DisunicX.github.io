@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="setting">
+        <button id="opener" onclick="setting()">➕</button>
+    </div>
+    <div id="opensetting" style="display: none;">
+        <div id="menu">
+            <p>Setting</p>
+            <button id="settingclose" onclick="settingclose()">✖</button>
+        </div>
+        <div id="engines">
+            <P>Choose Search Engine</P>
+            <a href="./index1.html"><button id="searchengines">Bing</button></a>
+            <a href="./index.html"><Button id="searchengines">Google</Button></a>
+            <a href="./index3.html"><button id="searchengines">DuckDuckGo</button></a>
+        </div>
+        <div id="engines">
+            <p>Choose Theme</p>
+            <button onclick="document.bgColor = 'white'" id="theme">Default</button>
+            <Button onclick="document.bgColor = 'white'" id="theme">Light</Button>
+            <button onclick="document.bgColor = '#252525'" id="theme">Dark</button>
+        </div>
+    </div>
+    <header>
+        <img src="./DisunicX.png" alt="" title="" class="" >
+    </header>
+    <div class="searchfunction">
+        <div class="searchbar">
+            <form action="https://yahoo.com/search">
+                <img src="./3.jpg" alt="">
+                <input type="text" name="q" id="input" autocomplete="off" list="DisunicXdatabase">
+                <button><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    function setting(){
+        document.getElementById("opensetting").style.display = 'block';
+    }
+    function settingclose(){
+        document.getElementById("opensetting").style.display = 'none';
+    }
+</script>
+</html>
