@@ -1,1 +1,0 @@
-document.getElementById("input").setPointerCapture(10)
