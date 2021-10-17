@@ -1,0 +1,128 @@
+body{
+    margin: 0px;
+}
+button{
+    cursor: pointer;
+}
+header{
+    text-align: center;
+}
+header img{
+    width: 240px;
+}
+.searchfunction{
+    margin-top: 20px;
+}
+.searchbar{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+    height: 45px;
+    padding: 0px 4px 0px 4px;
+    border-radius: 5px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    background: white;
+}
+.searchbar form{
+    width: 100%;
+    display: flex;
+}
+.searchbar img{
+    width: 45px;
+}
+.searchbar input{
+    height: -webkit-fill-available;
+    width: 100%;
+    border: none;
+    outline: 0;
+    padding:  0 0 0 8px;
+    font-size: 16px;
+}
+.searchbar button{
+    width: 45px;
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+#setting{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    transition: 5s;
+    margin-top: 20px;
+}
+#setting #opener{
+    display: block;
+    border: none;
+    outline: 0;
+    background:transparent;
+    font-size: 20px;
+}
+#opensetting{
+    position: absolute;
+    background: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 120px;
+    box-shadow: 0 0 200px 0 #7a7777;
+    padding: 0px 0px 22px 0px;
+    transition: 5s;
+    animation: fadein 5s;
+}
+#menu{
+    display: flex;
+}
+#menu p{
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 30px;
+}
+#menu button{
+    height: 30px;
+    margin-right: 5px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    width: 100%;
+    text-align: end;
+}
+#engines p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#engines button{
+    padding: 5px 5px 5px 5px;
+    margin: 10px 10px 10px 10px;
+}
+#weather{
+    position: absolute;
+    width: 100%;
+    text-align: end;
+    margin-top: 18px;
+}
+.circle{
+    font-size: 17px;
+}
+#startweather{
+    display: inline-flex;
+}
+#startweather div{
+    margin: 0px 4px 0px 4px;;
+}
+#location{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: deepskyblue;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+#show-weather{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 3px;
+    font-weight: 800;
+    color: #fe4dba;
+}
+
+
