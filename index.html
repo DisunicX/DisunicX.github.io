@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <title>DisunicX - The Next Generation Search Engine | Disunic </title>
+    <meta name="description"
+        content="Search And Browse The Internet With 8 Search Engines | DisunicX | Disunic.com">
+    <meta name="Description"
+        content="Search And Browse The Internet With 8 Search Engines | DisunicX | Disunic.com">
+    <meta name="keywords"
+        content="DisunicX,Disunicx,disunicx,Disunic,Disuniccom,disunic.com,disunicx,disunicx.com,disunicx,disunic">
+    <!-- Google Search Console -->
+    <link href="./googlebce00f63a9f22159.html">
+    <!--  -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" type="icon">
+    <link rel="favicon" href="favicon.ico" type="icon">
+    <meta name="icon" content="favicon.ico">
+    <meta name="image" content="favicon.ico">
+    <meta name="twitter:image" content="favicon.ico">
+</head>
+<body>
+    <div id="setting">
+        <button id="opener" onclick="setting()">➕</button>
+    </div>
+    <div id="opensetting" style="display: none;">
+        <div id="menu">
+            <p>Setting</p>
+            <button id="settingclose" onclick="settingclose()">✖</button>
+        </div>
+        <div id="engines">
+            <P>Choose Search Engine</P>
+            <a href="./index1.html"><button id="searchengines">Bing</button></a>
+            <a href="./index2.html"><Button id="searchengines">Yahoo</Button></a>
+            <a href="./index3.html"><button id="searchengines">DuckDuckGo</button></a>
+            <a href="./index1.html"><button id="searchengines">Startpage</button></a>
+            <a href="./index2.html"><Button id="searchengines">Yandex</Button></a>
+            <a href="./index3.html"><button id="searchengines">Ecosia</button></a>
+            <a href="./index3.html"><button id="searchengines">AOL</button></a>
+            <a href="./index1.html"><button id="searchengines">MetaGer</button></a>
+        </div>
+        <div id="engines">
+            <p>Choose Theme</p>
+            <button onclick="document.bgColor = 'white'" id="theme">Default</button>
+            <Button onclick="document.bgColor = 'white'" id="theme">Light</Button>
+            <button onclick="document.bgColor = '#252525'" id="theme">Dark</button>
+        </div>
+    </div>
+    <div id="weather" class="weather">
+        <div class="error"></div>
+        <div class="circle">
+        <div id="startweather" class="startweather">
+        <div id="location" class="location"></div>
+        <div id="show-weather" class="show-weather"><span></span></div>
+        <div class="weather-icons" style="font-size: 20px;font-weight: bold;color: #397cf4;">°C</div>
+        </div>
+    </div>
+    </div>
+    <header>
+        <img src="./DisunicX.png" alt="" title="" class="" >
+    </header>
+    <div class="searchfunction">
+        <div class="searchbar">
+            <form action="https://google.com/search">
+                <img src="./1.png" alt="">
+                <input type="text" name="q" id="input" autocomplete="off" list="DisunicXdatabase">
+                <button><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+<style>
+    body{
+    margin: 0px;
+}
+button{
+    cursor: pointer;
+}
+header{
+    text-align: center;
+}
+header img{
+    width: 240px;
+}
+.searchfunction{
+    margin-top: 20px;
+}
+.searchbar{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+    height: 45px;
+    padding: 0px 4px 0px 4px;
+    border-radius: 5px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    background: white;
+}
+.searchbar form{
+    width: 100%;
+    display: flex;
+}
+.searchbar img{
+    width: 45px;
+}
+.searchbar input{
+    height: -webkit-fill-available;
+    width: 100%;
+    border: none;
+    outline: 0;
+    padding:  0 0 0 8px;
+    font-size: 16px;
+}
+.searchbar button{
+    width: 45px;
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+#setting{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    transition: 5s;
+    margin-top: 20px;
+}
+#setting #opener{
+    display: block;
+    border: none;
+    outline: 0;
+    background:transparent;
+    font-size: 20px;
+}
+#opensetting{
+    position: absolute;
+    background: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 120px;
+    box-shadow: 0 0 200px 0 #7a7777;
+    padding: 0px 0px 22px 0px;
+    transition: 5s;
+    animation: fadein 5s;
+}
+#menu{
+    display: flex;
+}
+#menu p{
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 30px;
+}
+#menu button{
+    height: 30px;
+    margin-right: 5px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    width: 100%;
+    text-align: end;
+}
+#engines p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#engines button{
+    padding: 5px 5px 5px 5px;
+    margin: 10px 10px 10px 10px;
+}
+#weather{
+    position: absolute;
+    width: 100%;
+    text-align: end;
+    margin-top: 18px;
+}
+.circle{
+    font-size: 17px;
+}
+#startweather{
+    display: inline-flex;
+}
+#startweather div{
+    margin: 0px 4px 0px 4px;;
+}
+#location{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: deepskyblue;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+#show-weather{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 3px;
+    font-weight: 800;
+    color: #fe4dba;
+}
+
+</style>
+<script>
+    function setting(){
+        document.getElementById("opensetting").style.display = 'block';
+    }
+    function settingclose(){
+        document.getElementById("opensetting").style.display = 'none';
+    }
+</script>
+<script>
+            /*
+        User Story: I can see the wheather in my current location
+        */
+
+        //check if the browser supports geo
+        $(document).ready(function(){
+        if("geolocation" in navigator){
+            navigator.geolocation.getCurrentPosition(function(position) {
+            showWeather(position.coords.latitude, position.coords.longitude);
+            });
+            //console.log('geo is available');
+        } else{
+            $('.error').html('<p>Geolocation is not available in your browser</p>');
+            //console.log('geo is not available');
+        }
+        });
+
+        $('#show-weather span').html('<div class="uil-ripple-css" style="transform:scale(0.26); top:-42px; left:15px;"><div></div><div></div></div>');
+
+        function showWeather(latitude, longitude){
+        var urlWeather = "https://api.openweathermap.org/data/2.5/weather?";
+        var lat = "lat=" + latitude;
+        var lon = "&lon=" + longitude;
+        var APIKEY = "&APPID=" + "f4b463ce4558c625c7004c6d7fa86b1a";
+        var unitsCelcius = "&units=metric";
+        var fetchUrl = urlWeather + lat + lon + unitsCelcius + APIKEY;
+        $.ajax({
+        url: fetchUrl,
+        success:function(data){
+            var temperature = data.main.temp;
+            var weatherIcons = data.weather[0].main;
+            
+                $('#show-weather span').text(Math.round(temperature));     
+                $('#location').text(data.name);
+            $('#myonoffswitch').on('click', function(){
+                if( $('#myonoffswitch').is(':checked') ){
+                    temperature = temperature * 9/5 + 32;
+                    $('#show-weather span').text(Math.round(temperature));
+                    console.log(temperature);
+                }else{
+                    temperature = data.main.temp;
+                    $('#show-weather span').text(temperature);
+                }
+            });
+            
+            // switch(weatherIcons){
+            // case "Clouds":
+            //     $('.weather-icons').html(
+            //     '<div class="icon cloudy"><div class="cloud"></div><div class="cloud"></div></div>'
+            //     );
+            //     break;
+            // case "Thunderstorm":
+            //     $('.weather-icons').html('<div class="icon thunder-storm"><div class="cloud"></div><div class="lightning"><div class="bolt"></div><div class="bolt"></div></div></div>');
+            //     break;
+            // case "Rain":
+            //     $('.weather-icons').html('<div class="icon rainy"><div class="cloud"></div><div class="rain"></div></div>');
+            //     break;
+            // case "Snow":
+            //     $('.weather-icons').html('<div class="icon flurries"><div class="cloud"></div><div class="snow"><div class="flake"></div><div class="flake"></div></div></div>');
+            // case "Clear":
+            //     $('.weather-icons').html('<div class="icon sunny"><div class="sun"><div class="rays"></div></div></div>');
+            // };
+        }
+        });
+
+        }
+</script>
+</html>
