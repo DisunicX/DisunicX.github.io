@@ -17,7 +17,7 @@ xhr.onload = function () {
             // console.log(element, index)
             let news = `<div class="main">
                         <a href="${element["url"]}">
-                            <img src="${element["urlToImage"]}"></img>
+                            <img src="${element["urlToImage"]}" alt="The server is unable to capture this image"></img>
                             <p>${element["title"]}</p>
                         </a>
                         </div>
