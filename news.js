@@ -2,7 +2,7 @@ let newsAccordion = document.getElementById('newsAccordion');
 
 // Create an ajax get request
 const xhr = new XMLHttpRequest();
-xhr.open('GET', `https://disunicx.github.io/newssss.json`, true);
+xhr.open('GET', `https://saurav.tech/NewsAPI/everything/cnn.json`, true);
 
 // What to do when response is ready
 xhr.onload = function () {
