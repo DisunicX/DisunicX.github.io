@@ -193,3 +193,7 @@ body{
         color: white;
         transition: color 0.4s;
     }
+    .dark .main p:hover{
+        color: #0054ee;
+        transition: color 0.4s;
+    }
